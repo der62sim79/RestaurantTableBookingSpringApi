@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Tisch Reservierung</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>Reserviert</h1>
+
+<p th:text="'id: ' + ${table.id}" />
+<p th:text="'Tisch Nr: ' + ${table.tableNumber}" />
+<p th:text="'Von Uhrzeit: ' + ${table.from}" />
+<p th:text="'Bis Uhrzeit: ' + ${table.to}" />
+<p th:text="'Anzahl Personen: ' + ${table.amountOfPeople}" />
+<p th:text="'Name: ' + ${table.personName}" />
+
+<a href="/table">Submit another booking</a>
+</body>
+</html>
